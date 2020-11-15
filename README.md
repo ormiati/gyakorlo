@@ -1,0 +1,2 @@
+# gyakorlo
+gyakorló feladatok
