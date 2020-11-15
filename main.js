@@ -61,3 +61,22 @@ function getNumberOfEvens(even){
     console.log(result.length);
     }
 getNumberOfEvens(numericArray);
+
+console.log('6. feladat:');
+
+function getSencondMinElement(sec){
+    let min = sec [0];
+    let secmin = sec [0];
+        for (let i = 1; i < sec.length; i += 1){
+            for (let j = 1; j < sec.length; j +=1){
+                if (sec[i] < min) {
+                min = sec[i]
+                if (sec [j] < secmin){
+                    secmin = sec [j]
+                }
+            }
+        }
+    };
+    console.log(secmin);
+};
+getSencondMinElement(numericArray);
