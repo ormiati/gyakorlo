@@ -80,3 +80,54 @@ function getSencondMinElement(sec){
     console.log(secmin);
 };
 getSencondMinElement(numericArray);
+
+
+console.log('7. feladat:');
+
+function compare(a,b) {
+    return b - a;
+}
+numericArray.sort(compare);
+
+console.log(numericArray[2]);
+
+console.log('8. feladat:');
+
+const newarray=[55, 'szia', true, 99, 88, false, 'hello'];
+
+function isItFalseOrTrues(newarray, b) {
+    for(let i=0; i<newarray.length; i +=1) {
+        if (newarray[i] === b) {
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(isItFalseOrTrues(newarray, 23));
+
+console.log('9. feladat:');
+
+function compared(a,b) {
+    return a - b;
+}
+let numarr = numericArray.sort(compared);
+
+function binarysearch(numarr, search){
+    let start = 0;
+    let end = numericArray.length-1;
+    while (start <= end) {
+        let mid= parseInt ((start + end) / 2);
+        if (numarr[mid] === search){
+            return true;
+        } 
+        else if (numarr[mid] < search) {
+            start= mid + 1;
+        }
+        else{
+            end= mid - 1;
+        }
+    }
+    return false;
+}
+console.log (binarysearch(numarr, 23));
