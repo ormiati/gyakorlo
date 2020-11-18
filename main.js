@@ -55,10 +55,12 @@ getSumOfArray(numericArray);
 console.log('5. feladat:');
 
 function getNumberOfEvens(even){
-    let result = function newBlock(even){
-    return (even % 2===0)
+    let result = 0
+    for ( let i=0; i<even.length; i += 1){
+        if (even[i] % 2===0)
+        result += 1;
     }
-    console.log(result.length);
+    console.log(result);
     }
 getNumberOfEvens(numericArray);
 
@@ -131,3 +133,21 @@ function binarysearch(numarr, search){
     return false;
 }
 console.log (binarysearch(numarr, 23));
+
+console.log('10. feladat:');
+
+function isAnyInIt (howin, b) {
+    let result = 0
+    for(let i=0; i<howin.length; i +=1) {
+        if (howin[i] === b)
+        result +=1; 
+        }
+    console.log(result);
+}
+
+isAnyInIt (newarray, 23);
+
+console.log('11. feladat:');
+
+const float=[8.88, 5.55, 77.14, 24.14, 25.52];
+
