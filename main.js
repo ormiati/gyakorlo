@@ -151,3 +151,53 @@ console.log('11. feladat:');
 
 const float=[8.88, 5.55, 77.14, 24.14, 25.52];
 
+function bubbleSort (ordered) {
+    let swapped;
+    do {
+        swapped = false;
+        for (let i = 0; i < ordered.length; i +=1) {
+            if (ordered[i] > ordered[i + 1]) {
+                let tmp = ordered[i];
+                ordered[i] = ordered[i + 1];
+                ordered[i + 1] = tmp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
+    return  console.log(ordered);
+};
+
+bubbleSort(float);
+
+console.log('12. feladat:');
+
+function bubbleSortOrdered (swaporder) {
+    const number = [];
+    const other= [];
+    for (let i = 0; i < swaporder.length; i +=1){
+        if(typeof swaporder[i]=== 'number'){
+            number.push(swaporder[i]);
+        }
+        else {
+            other.push(swaporder[i]);
+        };
+    };
+    let swapped;
+    do {
+        swapped = false;
+        for (let i = 0; i < number.length; i +=1) {
+            if (number[i] < number[i + 1]) {
+                let tmp = number[i];
+                number[i] = number[i + 1];
+                number[i + 1] = tmp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
+    for (let i = 0; i < other.length ; i +=1){
+        number.push(other[i])
+    }
+    return  console.log(number);
+};
+
+bubbleSortOrdered(newarray);
