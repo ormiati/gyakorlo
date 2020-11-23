@@ -22,7 +22,7 @@ function bubbleSort (nordered) {
 
     bubbleSort(trd);
 
-    let newnum = document.getElementsByClassName('txt')[0].value;
+    let newnum = document.getElementsByClassName('txt');
 
     function decide(newnum){
         if(newnum === 'number'){
