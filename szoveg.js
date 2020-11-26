@@ -12,11 +12,9 @@ const janeDoe = {
     lastName: 'Doe'
 };
 
-const merge= Object.assign(johnDoe,janeDoe);
+const merge= {'0':{...johnDoe},'1':{...janeDoe}};
 
-const result=`: ${merge.johnDoe}`;
-
-console.log(merge);
+console.log('0:',merge[0],'1:', merge[1]);
 
 console.log('2. feladat:');
 
